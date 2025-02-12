@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>CSS Selectors</title>
+	<style>
+		a:link {
+			color: red;
+		}
+
+		a:visted {
+			color: purple;
+		}
+
+		input[type=radio]:checked+label {
+			color: blue;
+		}
+
+		a:hover {
+			border-bottom: 3px solid black;
+		}
+
+		p:not(#text) {
+			color: blue;
+		}
+
+		p::first-line {
+			font-weight: bold;
+			font-size: 1.2em;
+			color: red;
+		}
+
+		li:nth-child(4n) {
+			color: green;
+			font-size: 25px;
+		}
+
+		h2:nth-of-type(3n) {
+			border: 1px solid black;
+		}
+
+		div:has(p) {
+			background-color: rgba(129, 1, 249, 0.305);
+			padding: 20px;
+		}
+
+		/* https://www.freecodecamp.org/news/nth-child-vs-nth-of-type-selector-in-css/ */
+	</style>
+</head>
+
+<body>
+
+	<h3>Puteti testa aici : <a
+			href="https://www.w3schools.com/cssref/trysel.asp">https://www.w3schools.com/cssref/trysel.asp</a></h3>
+
+	Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing</a> elit, sed do eiusmod <a href="#">tempor</a>
+	incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+	ut aliquip ex ea commodo consequat.
+
+
+	<form>
+		<input type="radio" name="rad" value="Radio Button">
+		<label for="rad"> Radio Button1</label>
+		<input type="radio" name="rad" value="Radio Button">
+		<label for="rad"> Radio Button2</label>
+	</form>
+	<p id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, repudiandae, distinctio culpa et
+		amet laudantium illum odit asperiores labore quisquam iure vitae adipisci aliquid necessitatibus consequatur
+		facere officiis. Quos, vero.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, repudiandae, distinctio culpa et amet
+		laudantium illum odit asperiores labore quisquam iure vitae adipisci aliquid necessitatibus consequatur facere
+		officiis. Quos, vero.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, repudiandae, distinctio culpa et amet
+		laudantium illum odit asperiores labore quisquam iure vitae adipisci aliquid necessitatibus consequatur facere
+		officiis. Quos, vero.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, repudiandae, distinctio culpa et amet
+		laudantium illum odit asperiores labore quisquam iure vitae adipisci aliquid necessitatibus consequatur facere
+		officiis. Quos, vero.</p>
+	<ol>
+		<li>item </li>
+		<li>item</li>
+		<li>item</li>
+		<li>item</li>
+		<li>item</li>
+		<li>item</li>
+		<li>item</li>
+		<li>item</li>
+	</ol>
+	<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, maiores, pariatur, velit quia ut reprehenderit
+		voluptas totam fugiat repellendus modi optio unde cupiditate possimus sunt voluptates molestiae earum vel sit!
+	</h2>
+	<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, maiores, pariatur, velit quia ut reprehenderit
+		voluptas totam fugiat repellendus modi optio unde cupiditate possimus sunt voluptates molestiae earum vel sit!
+	</h2>
+	<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, maiores, pariatur, velit quia ut reprehenderit
+		voluptas totam fugiat repellendus modi optio unde cupiditate possimus sunt voluptates molestiae earum vel sit!
+	</h2>
+	<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, maiores, pariatur, velit quia ut reprehenderit
+		voluptas totam fugiat repellendus modi optio unde cupiditate possimus sunt voluptates molestiae earum vel sit!
+	</h2>
+	<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, maiores, pariatur, velit quia ut reprehenderit
+		voluptas totam fugiat repellendus modi optio unde cupiditate possimus sunt voluptates molestiae earum vel sit!
+	</h2>
+	<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, maiores, pariatur, velit quia ut reprehenderit
+		voluptas totam fugiat repellendus modi optio unde cupiditate possimus sunt voluptates molestiae earum vel sit!
+	</h2>
+	<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, maiores, pariatur, velit quia ut reprehenderit
+		voluptas totam fugiat repellendus modi optio unde cupiditate possimus sunt voluptates molestiae earum vel sit!
+	</h2>
+	<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, maiores, pariatur, velit quia ut reprehenderit
+		voluptas totam fugiat repellendus modi optio unde cupiditate possimus sunt voluptates molestiae earum vel sit!
+	</h2>
+	<div>
+		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi corporis quia odit sapiente sunt aperiam
+			aliquid, tempore fugit natus, aliquam deleniti. Error quas odit magni maxime esse excepturi fuga rerum.</p>
+		<p>Nemo veniam, adipisci, deserunt maxime fugiat praesentium perferendis saepe voluptate reiciendis ea, iste
+			neque dolor corporis exercitationem dignissimos laborum magnam consequatur unde consectetur quas aperiam.
+			Repudiandae unde tempora qui sed.</p>
+		<p>Officia cumque dignissimos molestiae magni vitae at alias deserunt perspiciatis eos nesciunt placeat sapiente
+			non tenetur voluptatibus sit eum adipisci, natus quia rem doloribus distinctio nihil dolorem enim veritatis.
+			Ad?</p>
+		<p>Nesciunt, cumque veritatis. Corrupti, magnam sunt minima odio nisi exercitationem unde quibusdam praesentium
+			molestias eligendi alias fuga molestiae dignissimos vel tempore, veritatis veniam doloribus iusto! Minus
+			tempora eveniet a consequatur?</p>
+		<p>Est mollitia adipisci commodi, aliquid dolores omnis perspiciatis, sapiente pariatur labore aperiam id soluta
+			illum quod doloremque exercitationem, deleniti facere odit dignissimos expedita possimus sint libero? Earum,
+			sequi sapiente! Dolores?</p>
+		<p>Quasi dolorem officiis nisi voluptatum tempore. Neque eum id iure in, dolore accusantium dolor iste cumque
+			magnam consequatur quibusdam eaque nobis reprehenderit, adipisci temporibus doloremque numquam, provident
+			officia repellendus recusandae!</p>
+		<p>Ea doloremque earum debitis? Iure dignissimos maiores totam recusandae et saepe incidunt maxime iusto, optio
+			beatae delectus harum numquam hic. Esse iste eaque mollitia consectetur. Unde deleniti atque eius
+			accusantium?</p>
+		<p>Recusandae obcaecati unde exercitationem iure placeat voluptate temporibus, earum facilis perferendis
+			adipisci cumque facere molestiae voluptatum animi quidem velit architecto dicta nemo ipsa dolore inventore
+			dolorem nostrum eos soluta! Odit.</p>
+		<p>Fugiat, amet quis, adipisci error perferendis eos doloribus pariatur corrupti hic perspiciatis beatae
+			voluptate animi facere exercitationem! Iusto rem possimus, saepe eveniet accusantium numquam atque dolor
+			modi, sed consequatur harum!</p>
+		<p>Exercitationem, aperiam accusamus illum perferendis nobis nemo quo asperiores beatae in. Dolorem tenetur
+			impedit natus illo at nobis nulla quisquam nihil, temporibus sed a enim praesentium ad ratione cumque quae?
+		</p>
+	</div>
+	<div><img src="https://loremflickr.com/1620/360/" alt=""></div>
+</body>
+
+</html>

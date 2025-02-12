@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .demo {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 25px;
+        color: green;
+      }
+      .demo2 {
+        color: blue;
+        font-size: 10px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="apasa">Schimba culoarea</button>
+    <button id="apasa2">Schimba div</button>
+    <button id="apasa3">Schimba demo</button>
+    <div id="para">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nostrum,
+        dolor nemo rerum veritatis id blanditiis culpa saepe rem. Reiciendis!
+      </p>
+      <p>
+        Magni sint aperiam distinctio laborum placeat. Amet sit voluptatum est.
+        Quasi placeat optio ullam, temporibus facilis ab quo hic mollitia.
+      </p>
+      <p>
+        Quis ducimus non est quam? Quidem rerum optio non tempora perferendis
+        veritatis dolore id, ea adipisci minus facilis! Sed, culpa.
+      </p>
+      <p>
+        Officia ab veniam velit. Explicabo, saepe debitis, quis vero magnam
+        asperiores dignissimos incidunt minima quisquam deleniti reiciendis
+        atque, sit impedit?
+      </p>
+      <p>
+        Ex, iure! Pariatur molestias molestiae laboriosam, expedita illum cum
+        cupiditate, consectetur unde voluptates autem exercitationem animi, est
+        voluptatum eveniet atque?
+      </p>
+      <p>
+        Iure aperiam sunt mollitia blanditiis nisi rerum. Quod quasi vitae
+        assumenda odit! At autem dicta veritatis. Inventore nostrum adipisci
+        officiis.
+      </p>
+      <p>
+        Mollitia modi architecto consectetur porro doloremque molestias suscipit
+        adipisci sit quas, veniam odio quidem reprehenderit ullam placeat
+        quibusdam dignissimos quasi.
+      </p>
+      <p>
+        Ducimus cumque iusto enim et cum sed fugit tempore quos sint excepturi,
+        cupiditate corporis amet doloremque est rerum repudiandae sequi.
+      </p>
+      <p>
+        Dolorum iste quas, minima aspernatur, ad, autem ullam voluptatum
+        cupiditate ut voluptatem provident ipsa vel itaque error sunt sapiente
+        officia?
+      </p>
+      <p>
+        Cupiditate quisquam nobis consequatur hic alias voluptatem, itaque nam
+        recusandae vitae enim culpa sit, incidunt natus. Illo ea dolore quis.
+      </p>
+      <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+        laboriosam? Culpa, doloribus aliquam dicta laudantium laborum quo eius
+        deserunt nulla, ullam minus ut maiores totam voluptatibus consequuntur
+        nesciunt earum suscipit.
+      </h2>
+    </div>
+
+    <p class="demo">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus numquam
+      sunt, facere perspiciatis repellat ratione porro labore eum omnis laborum?
+    </p>
+    <p class="demo">
+      Dolorum porro voluptatibus placeat, dolore doloribus explicabo odit iure
+      totam expedita praesentium sit alias, minima excepturi quidem iusto.
+      Molestias, praesentium?
+    </p>
+    <p class="demo">
+      Provident velit doloribus nemo eum consequuntur, ipsam pariatur quaerat
+      incidunt? Impedit ratione dolores excepturi minima culpa corrupti, odit
+      soluta perspiciatis!
+    </p>
+    <p class="demo">
+      Recusandae repudiandae sunt et obcaecati laudantium, quas alias officia at
+      culpa nam sequi sed tempora architecto ut magnam atque non!
+    </p>
+
+    <script>
+      let btn = document.getElementById("apasa");
+      let p = document.getElementsByTagName("p");
+      let btn2 = document.getElementById("apasa2");
+      let div = document.getElementById("para");
+      let btn3 = document.getElementById("apasa3");
+      let paraDemo = document.getElementsByClassName("demo");
+      //   let paraDemo = document.querySelectorAll('.demo');
+
+      console.log("p :>> ", p);
+      btn.addEventListener("click", function () {
+        // for (const element of p) {
+        //   element.style.color = "red";
+        // }
+        let arry = [...p];
+        arry.forEach((element) => {
+          element.style.color = "red";
+          element.style.fontSize = "34px";
+        });
+        // p[0].style.color = "red";
+      });
+      btn2.addEventListener("click", function () {
+        div.style.cssText =
+          "border:1px solid red; font-size: 16px; color:#e3e3e3;";
+      });
+
+      btn3.addEventListener("click", function () {
+        let myArr = [...paraDemo];
+        myArr.forEach((element) => {
+          element.classList.toggle("demo2");
+        });
+      });
+    </script>
+  </body>
+</html>

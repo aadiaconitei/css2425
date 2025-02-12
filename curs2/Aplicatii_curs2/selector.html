@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 20px;
+        }
+
+        div:has(:not(img)) {
+            border: 2px dotted red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Selectori pseudoclase :has() si :not()</h1>
+
+    <div>
+        <h2>Primul div cu imagine</h2>
+        <img src="https://placehold.jp/3d4070/ffffff/650x150.png" alt="">
+    </div>
+    <div>
+        <img src="https://placehold.jp/3d4070/ffffff/650x150.png" alt="">
+
+    </div>
+    <div>
+        <h2>Al 3-lea div fara imagine</h2>
+    </div>
+</body>
+
+</html>
