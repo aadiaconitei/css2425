@@ -15,6 +15,7 @@
 
 .slider {
     animation: slider 10s linear infinite;
+    animation-direction: reverse;
 }
 
 @keyframes slider {
