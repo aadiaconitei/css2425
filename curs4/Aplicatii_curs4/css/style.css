@@ -19,8 +19,6 @@ body {
   .box:nth-child(9n) {
     visibility: hidden;
   }
-  
-
   #wrapper {
     width: 600px;
     margin: 0 auto;

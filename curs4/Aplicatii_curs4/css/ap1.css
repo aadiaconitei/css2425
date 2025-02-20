@@ -10,8 +10,7 @@
   }
 .calc{
     width: calc(100% - 300px);
-    background-image:linear-gradient(to right bottom,red, yellow, blue);
-  
+    background-image:linear-gradient(to right top,red, yellow, blue);
     height:100px;
     margin: 20px auto;
 }
