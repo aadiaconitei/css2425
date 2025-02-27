@@ -1,0 +1,45 @@
+Pas1. Verificam versiunea de NodeJs
+npm -vnode -v
+
+facem .gitignore 
+si trecem 
+node_module
+dist
+
+Pas2. Initializam package.json
+npm init -y
+
+Pas3. Instalam modulele necesare
+npm install vite 
+npm i vite-plugin-html vite-plugin-static-copy sass ejs --save-dev
+
+Pas4.  facem vite.config.js
+
+Pas5. facem index.html
+
+Pas6. modificam package.json
+"scripts": {
+    "dev": "vite",
+    "build": "vite build",
+}
+
+Pas7. redimensionat si convertit in webp
+
+npm install imagemin imagemin-mozjpeg imagemin-pngquant sharp fs-extra
+
+Pas8. facem fisierul resize-images.js
+
+Pas9. node resize-images.js
+
+Pas10. 
+modificam fisierele din templates/ si inlocuim imaginile
+<picture>
+  <source srcset="assets/img/example-mobile.webp" media="(max-width: 480px)">
+  <source srcset="assets/img/example-laptop.webp" media="(max-width: 1024px)">
+  <img src="assets/img/example-desktop.webp" alt="Exemplu imagine optimizată">
+</picture>
+
+Pas11.
+npm run build
+
+Pas12. decomentam fisierele de javascript
