@@ -34,7 +34,6 @@ export default defineConfig({
                     sec1: sec1,
                     sec2: sec2,
                     sec3: sec3,
-                   
                     sec5: sec5,
                     sec4: sec4,
                     sec6: sec6,
@@ -77,7 +76,7 @@ export default defineConfig({
         rollupOptions: {
             preserveEntrySignatures: 'strict', // Păstrează fiecare fișier separat
             input: {
-                main: './src/index.html', // Se asigură că Vite include toate fișierele din HTML
+                main: 'index.html', // Se asigură că Vite include toate fișierele din HTML
             },
             output: {
                 // assetFileNames: "assets/css/[name]-[hash][extname]", // Optimizare CSS/JS
